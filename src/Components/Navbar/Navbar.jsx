@@ -4,7 +4,7 @@ import {Link} from "react-router-dom"
 
 import cart_icon from "../Assets/cart_icon.png"
 export const Navbar = () => {
-    const [menu,setMenu] = useState()
+    const [menu,setMenu] = useState("shop")
     return (
         <>
         <div className='Navbar'>

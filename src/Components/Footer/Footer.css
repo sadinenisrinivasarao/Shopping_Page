@@ -1,4 +1,4 @@
-.footer{
+.footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -6,30 +6,38 @@
     gap: 50px;
 
 }
-.footer-logo{
+
+.footer-logo {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 20px;
 }
 
-.footer_ul{
+.footer-logo img {
+    width: 20%;
+}
+
+.footer_ul {
     display: flex;
     list-style: none;
     gap: 50px;
     color: #252525;
     font-size: 18px;
 }
-.footer_ul li{
+
+.footer_ul li {
     cursor: pointer;
 }
-.footer_social_links{
+
+.footer_social_links {
     display: flex;
     gap: 20px;
 }
-.footer_icon{
+
+.footer_icon {
     padding: 10px;
     padding-bottom: 6px;
     background: #fbfbfb;
     border: 1px solid #ebebeb;
 }
-

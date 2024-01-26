@@ -10,7 +10,7 @@ export const Footer = () =>{
         <div className="footer">
 <div className="footer-logo">
     <img src="https://logosandtypes.com/wp-content/uploads/2021/01/myntra.svg" alt="" />
-    <p>My Shopping website</p>
+    <h2>My Shopping website</h2>
 
 </div>
 <ul className="footer_ul">
