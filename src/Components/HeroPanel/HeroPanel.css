@@ -1,0 +1,60 @@
+.HeroPanel {
+    display: flex;
+
+    background: linear-gradient(rgb(251, 241, 241), rgb(244, 170, 170));
+    ;
+}
+
+.HeroPanel_left,
+.HeroPanel_right {
+    width: 50%;
+
+}
+
+.HeroPanel_left {
+    padding-top: 4%;
+}
+
+.HeroPanel_left h2 {
+    font-size: 4rem;
+}
+
+.Hero_head p {
+    font-size: 3rem;
+}
+
+.Hero_head p img {
+    width: 4rem;
+}
+
+.new_collections a {
+    text-decoration: none;
+    color: white;
+}
+
+.new_collections {
+    background: red;
+    width: 250px;
+    height: 50px;
+    border: none;
+    border-radius: 75px;
+    color: white;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.HeroPanel_right {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.HeroPanel_right img {
+    height: 500px;
+}
+
+.Hero_latest button:hover {
+    transform: scale(1.1);
+    background: rgb(248, 127, 87);
+}

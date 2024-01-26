@@ -1,0 +1,34 @@
+.NewCollection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* gap: 5px; */
+    margin-top: 2%;
+
+}
+
+.NewCollection_item {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-top: 70px;
+    gap: 10px;
+    width: min-content;
+
+}
+
+.NewCollection_item .item {
+    margin-bottom: 20px;
+}
+
+
+.NewCollection h1 {
+    margin-bottom: 2px;
+}
+
+.NewCollection hr {
+    height: 6px;
+    width: 200px;
+    border-radius: 10px;
+    background: #252525;
+    margin-bottom: 30px;
+}

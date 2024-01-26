@@ -1,0 +1,25 @@
+.shop_products {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    margin-top: 2%;
+
+}
+
+.shop_products {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-top: 70px;
+    gap: 20px;
+    width: min-content;
+
+}
+
+.shop_products .item {
+    margin-bottom: 20px;
+}
+
+.category_banner {
+    width: 100%;
+}
