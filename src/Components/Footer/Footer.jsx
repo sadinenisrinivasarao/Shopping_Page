@@ -1,7 +1,6 @@
 
 import React from "react"
 import './Footer.css'
-import footer_logo from "../Assets/logo_big.png"
 import insta_logo from "../Assets/instagram_icon.png"
 import pintrest_icon from "../Assets/pintester_icon.png"
 import whatsapp_icon from "../Assets/whatsapp_icon.png"
@@ -10,8 +9,8 @@ export const Footer = () =>{
         <>
         <div className="footer">
 <div className="footer-logo">
-    <img src={footer_logo} alt="" />
-    <p>Shooper</p>
+    <img src="https://logosandtypes.com/wp-content/uploads/2021/01/myntra.svg" alt="" />
+    <p>My Shopping website</p>
 
 </div>
 <ul className="footer_ul">
