@@ -5,12 +5,13 @@ import { Items } from "../../Components/Items/Items";
 import { ShopContext } from "../../Context/ShopContext";
 export const ShopCategory = (props) => {
     const {all_products}  = useContext(ShopContext)
+    
     return(
         <div className="shop-category">
             <img  className="category_banner" src={props.banner} alt="" />
        <div className="Shopcategory-index">
         <p>
-            <span>Showing 1- 12</span> out of 36
+            <span>Showing <b>1- 12</b></span> out of <b>36</b>
         </p>
         <div className="Shop_sort">
             Sort by <img src={dropdown_icon}></img>
@@ -25,6 +26,9 @@ return <Items key={i} id={item.id} name={item.name} image={item.image} new_price
                 return null;
             }
         })}
+       </div>
+       <div className="loadMore">
+        Expand more
        </div>
         </div>
         

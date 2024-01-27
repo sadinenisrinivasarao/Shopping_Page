@@ -1,0 +1,53 @@
+.signup_container,
+.signup_credentials {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+
+}
+
+/* 
+.App {
+    background: linear-gradient(rgb(251, 241, 241), rgb(244, 170, 170));
+} */
+
+.signup_credentials,
+button {
+    width: 75%;
+}
+
+.signup_container {
+    border: 1px solid black;
+    margin-left: 35%;
+    margin-top: 5%;
+    width: 30%;
+    background: whitesmoke;
+}
+
+.loginsignup input {
+    width: 100%;
+}
+
+.loginsignup button {
+    background: red;
+    font-size: 20px;
+    color: white;
+}
+
+.loginsignup input,
+signup_button {
+    height: 40px;
+    /* width: 100%; */
+    border-radius: 75px;
+    margin: 10px auto;
+
+}
+
+.login_link {
+    color: red;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 20px;
+}
