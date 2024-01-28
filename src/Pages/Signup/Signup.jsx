@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import { toast } from 'react-toastify';
 import { useNavigate , Link } from 'react-router-dom';
 import { Login } from '../Login/Login';
+
 export const Signup = () =>{
     const [phone, setPhone] = useState("");
     const [FullName, setName] = useState("");
@@ -27,7 +28,14 @@ export const Signup = () =>{
   };
 
   return (
+<>
+
+<div className="login_heading">
+                <img src="https://logosandtypes.com/wp-content/uploads/2021/01/myntra.svg" alt="" />
+                <h2>My Shopping website</h2>
+            </div>
     <div className="Signup_div">
+      
       <form action="" onSubmit={handleSubmit} method="POST">
         <label htmlFor="phone"></label>
         <input required
@@ -76,5 +84,6 @@ export const Signup = () =>{
         </div>
       </form>
     </div>
+    </>
   );
 };

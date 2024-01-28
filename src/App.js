@@ -13,16 +13,17 @@ import men_banner from "./Components/Assets/banner_mens.png"
 import women_banner from "./Components/Assets/banner_women.png"
 import kids_banner from "./Components/Assets/banner_kids.png"
 
+
 import { ProductDetails } from './Components/ProductDetails/ProductDetails';
 
 function App() {
-  
-  
+
+
 
   return (
     <div className="App">
       <BrowserRouter>
-        
+
         <Navbar />
         <Routes>
           <Route path='/shop' element={<Shop />}></Route>

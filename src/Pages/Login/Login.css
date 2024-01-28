@@ -65,3 +65,14 @@ input::-webkit-input-placeholder {
     font-size: 20px;
     font-weight: 700;
 }
+
+.login_heading img {
+    width: 10%
+}
+
+.login_heading {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
