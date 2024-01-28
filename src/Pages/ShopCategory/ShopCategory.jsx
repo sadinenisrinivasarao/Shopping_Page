@@ -9,14 +9,14 @@ export const ShopCategory = (props) => {
     return(
         <div className="shop-category">
             <img  className="category_banner" src={props.banner} alt="" />
-       <div className="Shopcategory-index">
+       {/* <div className="Shopcategory-index">
         <p>
             <span>Showing <b>1- 12</b></span> out of <b>36</b>
         </p>
         <div className="Shop_sort">
             Sort by <img src={dropdown_icon}></img>
         </div>
-       </div>
+       </div> */}
        <div className="shop_products">
         {all_products.map((item ,i) =>{
             if(props.category === item.category){

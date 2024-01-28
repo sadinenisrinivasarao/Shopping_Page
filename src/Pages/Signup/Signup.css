@@ -54,3 +54,21 @@ input::-webkit-input-placeholder {
 .already {
     margin: 20px;
 }
+
+@media screen and (max-width: 950px) {
+    .Signup_div {
+        margin-left: 3%;
+        margin-top: 2%;
+
+        padding: 20px 0 28px;
+        width: 90%;
+    }
+
+    .Signup_div input {
+        width: 90%;
+    }
+
+    .footer_ul {
+        flex-direction: column;
+    }
+}

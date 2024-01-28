@@ -53,3 +53,36 @@
     border-radius: 75px;
     font-size: 24px;
 }
+
+
+@media screen and (max-width: 950px) {
+    .cart_items {
+        margin: 5px 20px;
+    }
+
+    .item_main {
+        gap: 15px;
+    }
+
+    .cartItem_Icon {
+        height: 90px;
+    }
+
+    .cartItem_total {
+        text-align: justify;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .Check_out {
+        padding: 10px 20px;
+    }
+
+    .payment_details {
+        width: 100%;
+    }
+}

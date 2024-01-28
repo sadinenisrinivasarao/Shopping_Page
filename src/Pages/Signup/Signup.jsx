@@ -37,9 +37,9 @@ export const Signup = () =>{
     <div className="Signup_div">
       <h1>Signup</h1>
       <form action="" onSubmit={handleSubmit} method="POST">
-        <label htmlFor="phone"></label>
+        <label htmlFor="phone">Phone: </label>
         <input required
-          className="form-control"
+          className=""
           type="phone"
           id="phone"
           name="phone"
@@ -47,9 +47,9 @@ export const Signup = () =>{
           value={phone}
           onChange={(e) => setPhone(e.target.value)}
         /><br />
-        <label htmlFor="name"></label>
+        <label htmlFor="name">Name: </label>
         <input required
-          className="form-control"
+          className=""
           type="name"
           id="name"
           name="name"
@@ -57,9 +57,9 @@ export const Signup = () =>{
           value={FullName}
           onChange={(e) => setName(e.target.value )}
         /><br />
-        <label htmlFor="email"></label>
+        <label htmlFor="email">Email: </label>
         <input required
-          className="form-control"
+          className=""
           type="email"
           id="email"
           name="email"
@@ -67,9 +67,9 @@ export const Signup = () =>{
           value={email}
           onChange={(e) => setEmail(e.target.value )}
         /><br />
-        <label htmlFor="password"></label>
+        <label htmlFor="password">Password: </label>
         <input required
-          className="form-control"
+          className=""
           type="password"
           id="password"
           name="password"

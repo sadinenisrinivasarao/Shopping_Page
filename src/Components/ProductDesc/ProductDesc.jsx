@@ -10,7 +10,7 @@ export const ProductDesc = (props) => {
     const {addToCart} = useContext(ShopContext);
     return (
         <>
-        <div className="product_desc">
+        <div className="product_desc container">
             <div className="desc_left">
                 <div className="image_list">
                     <img src={product.image} alt="" />

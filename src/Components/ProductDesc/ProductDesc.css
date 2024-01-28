@@ -92,3 +92,35 @@
     border-radius: 75px;
     font-size: 24px;
 }
+
+@media screen and (max-width: 950px) {
+    .product_desc {
+        display: flex;
+        margin: 0px;
+        margin-top: 3%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .desc_right {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .desc_left {
+        gap: 5px;
+    }
+
+    /* .image_list img {
+        height: 5%;
+    } */
+    .image_list {
+        display: none;
+    }
+
+    .product_mainimage img {
+        width: 100%;
+        height: 100%;
+    }
+}

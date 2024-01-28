@@ -7,6 +7,13 @@
 
 }
 
+@media screen and (max-width: 950px) {
+    .NewCollection_item {
+        display: flex !important;
+        flex-direction: column;
+    }
+}
+
 .NewCollection_item {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;

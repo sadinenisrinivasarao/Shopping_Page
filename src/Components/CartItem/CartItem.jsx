@@ -39,7 +39,7 @@ export const CartItem = () =>{
             })}
             <div className="cartItem_total">
                 <h1>Cart total</h1>
-                <div>
+                <div className="payment_details">
                     <div className="cart_total_items">
                         <p>Subtotal</p>
                         <p>$ {getTotalCartAmount()}</p>

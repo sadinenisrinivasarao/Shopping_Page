@@ -113,3 +113,19 @@
     font-style: italic;
     font-weight: 700;
 }
+
+@media screen and (max-width: 950px) {
+
+    .Shopping_logo a {
+        display: none;
+    }
+
+    .Navbar {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 5%;
+    }
+
+
+}

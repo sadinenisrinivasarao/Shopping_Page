@@ -4,8 +4,8 @@
     align-items: center;
     gap: 5x;
     margin-top: 2%;
-    width: 50%;
-    padding-left: 25%;
+    /* width: 50%;
+    padding-left: 25%; */
 }
 
 .popular_item {
@@ -25,4 +25,15 @@
     border-radius: 10px;
     background: #252525;
     margin-bottom: 30px;
+}
+
+@media screen and (max-width: 950px) {
+    .popular_item {
+        flex-direction: column;
+    }
+
+    .popular {
+        width: 100%;
+        padding-left: 0px;
+    }
 }

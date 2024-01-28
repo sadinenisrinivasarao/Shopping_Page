@@ -18,6 +18,10 @@
 
 .shop_products .item {
     margin-bottom: 20px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
 }
 
 .category_banner {
@@ -51,4 +55,20 @@
     height: 50px;
     cursor: pointer;
     font-size: 20px;
+}
+
+
+@media screen and (max-width: 950px) {
+    .shop_products {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .shop_products .item {
+
+        flex-direction: column;
+    }
 }

@@ -58,3 +58,15 @@
     transform: scale(1.1);
     background: rgb(248, 127, 87);
 }
+
+@media screen and (max-width: 950px) {
+    .HeroPanel_right {
+        display: none;
+    }
+
+    .HeroPanel_left {
+        width: 100%;
+        padding-bottom: 7%;
+
+    }
+}

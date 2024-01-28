@@ -13,6 +13,13 @@
       "email": "srinivasarao.sadineni1010@gmail.com",
       "password": "sadineni",
       "id": 2
+    },
+    {
+      "phone": "22222",
+      "FullName": "srinivas",
+      "email": "srinivasaraouidev@gmail.com",
+      "password": "sadineni",
+      "id": 3
     }
   ]
 }
