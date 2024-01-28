@@ -3,6 +3,7 @@ import "./ProductDesc.css"
 import star_icon from "../Assets/star_icon.png"
 import star_dull from "../Assets/star_dull_icon.png"
 import { ShopContext } from "../../Context/ShopContext";
+import { Link } from "react-router-dom";
 
 export const ProductDesc = (props) => {
     const {product} = props;
@@ -18,7 +19,7 @@ export const ProductDesc = (props) => {
                     <img src={product.image} alt="" />
                 </div>
                 <div className="product_mainimage">
-                <img src={product.image} alt="" />
+               <Link to={`/product/${product.id}`}><img src={product.image} alt="" /></Link>
                 </div>
             </div>
             <div className="desc_right">

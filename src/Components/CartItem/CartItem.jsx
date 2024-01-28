@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import "./CartItem.css"
 import { ShopContext } from "../../Context/ShopContext";
 import removeIcon from "../Assets/cart_cross_icon.png"
+import { Link } from "react-router-dom";
 
 export const CartItem = () =>{
      const {all_products,cartItem, removeFromCart,getTotalCartAmount} = useContext(ShopContext)
@@ -23,7 +24,7 @@ export const CartItem = () =>{
                     return (
                         <div>
                 <div className="CartItem_format item_main">
-                <img className="cartItem_Icon" src={e.image} alt="" />
+                <Link to={`/product/${e.id}`}><img className="cartItem_Icon" src={e.image} alt="" /></Link>
                 <b>{e.name}</b>
                 <p>$ {e.new_price}</p>
                 <button className="cart_quantity">{cartItem[e.id]}</button>
@@ -55,7 +56,7 @@ export const CartItem = () =>{
                        
                     </div>
                 </div>
-                <button className="Check_out">Procedd to checkout</button>
+                <button className="Check_out">Proceed to checkout</button>
             </div>
         </div>
         </>
