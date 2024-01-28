@@ -55,6 +55,7 @@ export const Login = ({ setUsername })=> {
                 <h2>My Shopping website</h2>
             </div>
             <div className="Login_div credentials">
+                <h1> Login</h1>
                 <form onSubmit={success_login}>
                     <div className="username_div">
                         <label htmlFor="email"></label>

@@ -35,7 +35,7 @@ export const Signup = () =>{
                 <h2>My Shopping website</h2>
             </div>
     <div className="Signup_div">
-      
+      <h1>Signup</h1>
       <form action="" onSubmit={handleSubmit} method="POST">
         <label htmlFor="phone"></label>
         <input required

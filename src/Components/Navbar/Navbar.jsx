@@ -42,7 +42,7 @@ export const Navbar = ({ username }) => {
                     <div className='Nav-login-cart'>
                     {username && (<div><p className='user_name'>Hi  {username}</p></div> )}
                     
-                        <button className='login_btn' onClick={window.localStorage.clear()}><Link to={'/login'}>Signout</Link></button>
+                        <button className='login_btn' ><Link to={'/login'}>Signout</Link></button>
                         <Link to={'/cart'}><img src={cart_icon} alt="Cart icon" /></Link>
                         <div className='cart_count'>{CartQuantity()}</div>
                     </div>
