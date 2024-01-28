@@ -57,7 +57,7 @@ input::-webkit-input-placeholder {
 
 @media screen and (max-width: 950px) {
     .Signup_div {
-        margin-left: 3%;
+        margin-left: 5%;
         margin-top: 2%;
 
         padding: 20px 0 28px;
