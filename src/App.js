@@ -18,13 +18,14 @@ import { ProductDetails } from './Components/ProductDetails/ProductDetails';
 
 function App() {
 
-
+  const [username, setUsername] = useState('');
 
   return (
+
     <div className="App">
       <BrowserRouter>
 
-        <Navbar />
+        <Navbar username={username} />
         <Routes>
           <Route path='/shop' element={<Shop />}></Route>
           <Route path='/men' element={<ShopCategory banner={men_banner} category="men" />}></Route>
@@ -34,8 +35,8 @@ function App() {
             <Route path=':productId' element={<Product />}></Route>
           </Route>
           <Route path='/cart' element={<Cart />}></Route>
-          <Route path='/login' element={<Login />}></Route>
-          <Route path='/' element={<Login />}></Route>
+          <Route path='/login' element={<Login setUsername={setUsername} />}></Route>
+          <Route path='/' element={<Login setUsername={setUsername} />}></Route>
           <Route path='/signup' element={<Signup />}></Route>
         </Routes>
         <br />
@@ -44,6 +45,7 @@ function App() {
       </BrowserRouter>
     </div >
   );
+
 }
 
 export default App;

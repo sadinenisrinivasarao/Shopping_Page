@@ -2,14 +2,17 @@ import React, { useContext, useState, useEffect } from 'react';
 import './Navbar.css';
 import { Link, useLocation } from "react-router-dom";
 import { ShopContext } from "../../Context/ShopContext";
+import account_icon from "../Assets/account.jpeg"
 
 import cart_icon from "../Assets/cart_icon.png";
 
-export const Navbar = () => {
+export const Navbar = ({ username }) => {
+   
     const location = useLocation();
     const { CartQuantity } = useContext(ShopContext);
     const [hideNavbar, setHideNavbar] = useState(false);
     
+
     useEffect(() => {
         // Update hideNavbar based on the current location
         if (location.pathname === '/login' || location.pathname === '/signup' || location.pathname === '/') {
@@ -37,7 +40,9 @@ export const Navbar = () => {
                         </ul>
                     </div>
                     <div className='Nav-login-cart'>
-                        <button className='login_btn'><Link to={'/login'}>Signout</Link></button>
+                    {username && (<div><p className='user_name'>Hi  {username}</p></div> )}
+                    
+                        <button className='login_btn' onClick={window.localStorage.clear()}><Link to={'/login'}>Signout</Link></button>
                         <Link to={'/cart'}><img src={cart_icon} alt="Cart icon" /></Link>
                         <div className='cart_count'>{CartQuantity()}</div>
                     </div>

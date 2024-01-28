@@ -4,10 +4,11 @@ import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import './Login.css';
 
-export const Login = () => {
+export const Login = ({ setUsername })=> {
     const usernavigate = useNavigate();
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
+    const [userName,setName] = useState("")
 
     const success_login = (e) => {
         e.preventDefault();
@@ -20,6 +21,7 @@ export const Login = () => {
                     } else {
                         if (resp[0].password === password) {
                             sessionStorage.setItem('email', email);
+                            setUsername(resp[0].FullName);
                             usernavigate('/shop');
                         } else {
                             toast.error('enter valid password');
@@ -78,6 +80,7 @@ export const Login = () => {
                     </div>
                 </form>
             </div>
+           
         </>
     );
 };

@@ -92,3 +92,14 @@
     background: red;
     color: whitesmoke;
 }
+
+.account_icon {
+    width: 3%;
+}
+
+.user_name {
+    width: 150px;
+    font-size: 17px;
+    font-style: italic;
+    font-weight: 700;
+}
