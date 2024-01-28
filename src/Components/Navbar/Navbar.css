@@ -5,9 +5,19 @@
     box-shadow: 1px 2px 3px -2px black;
 }
 
+.Shopping_logo a {
+    display: flex;
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-weight: 700;
+    gap: 15px;
+}
+
 .Shopping_logo {
     width: 4%;
     align-items: center;
+
 }
 
 .Shopping_logo img {

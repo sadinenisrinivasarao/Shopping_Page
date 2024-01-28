@@ -29,11 +29,11 @@ export const Navbar = ({ username }) => {
             {!hideNavbar && (
                 <div className='Navbar'>
                     <div className='Shopping_logo'>
-                        <Link to={'/'}><img src="https://logosandtypes.com/wp-content/uploads/2021/01/myntra.svg" alt="Logo" /></Link>
+                        <Link to={'/shop'}><img src="https://logosandtypes.com/wp-content/uploads/2021/01/myntra.svg" alt="Logo" />My Shopping Website</Link>
                     </div>
                     <div>
                         <ul className='nav-links'>
-                            <li onClick={() => { setMenu("shop") }}><Link to={'/'}>Shop</Link> {menu === "shop" ? <hr /> : <></>}</li>
+                            <li onClick={() => { setMenu("shop") }}><Link to={'/shop'}>Shop</Link> {menu === "shop" ? <hr /> : <></>}</li>
                             <li onClick={() => { setMenu("men") }}><Link to={'/men'}>Men</Link>{menu === "men" ? <hr /> : <></>}</li>
                             <li onClick={() => { setMenu("Women") }}><Link to={'/women'}>Women</Link>{menu === "Women" ? <hr /> : <></>}</li>
                             <li onClick={() => { setMenu("kids") }}><Link to={'/kids'}>Kids</Link>{menu === "kids" ? <hr /> : <></>}</li>
