@@ -27,7 +27,7 @@ function App() {
 
         <Navbar username={username} />
         <Routes>
-          <Route path='/shop' element={<Shop />}></Route>
+          <Route path='/' element={<Shop />}></Route>
           <Route path='/men' element={<ShopCategory banner={men_banner} category="men" />}></Route>
           <Route path='/women' element={<ShopCategory banner={women_banner} category="women" />}></Route>
           <Route path='/kids' element={<ShopCategory banner={kids_banner} category="kid" />}></Route>
@@ -35,9 +35,9 @@ function App() {
             <Route path=':productId' element={<Product />}></Route>
           </Route>
           <Route path='/cart' element={<Cart />}></Route>
-          <Route path='/login' element={<Login setUsername={setUsername} />}></Route>
+          {/* <Route path='/login' element={<Login setUsername={setUsername} />}></Route>
           <Route path='/' element={<Login setUsername={setUsername} />}></Route>
-          <Route path='/signup' element={<Signup />}></Route>
+          <Route path='/signup' element={<Signup />}></Route> */}
         </Routes>
         <br />
         <hr />

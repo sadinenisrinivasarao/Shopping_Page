@@ -15,7 +15,8 @@ export const Navbar = ({ username }) => {
 
     useEffect(() => {
         // Update hideNavbar based on the current location
-        if (location.pathname === '/login' || location.pathname === '/signup' || location.pathname === '/') {
+        // if (location.pathname === '/login' || location.pathname === '/signup' || location.pathname === '/') {
+            if (location.pathname === '/login' || location.pathname === '/signup' ) {
             setHideNavbar(true);
         } else {
             setHideNavbar(false);
@@ -42,7 +43,7 @@ export const Navbar = ({ username }) => {
                     <div className='Nav-login-cart'>
                     {username && (<div><p className='user_name'>Hi  {username}</p></div> )}
                     
-                        <button className='login_btn' ><Link to={'/'}>Signout</Link></button>
+                        {/* <button className='login_btn' ><Link to={'/'}>Signout</Link></button> */}
                         <Link to={'/cart'}><img src={cart_icon} alt="Cart icon" /></Link>
                         <div className='cart_count'>{CartQuantity()}</div>
                     </div>

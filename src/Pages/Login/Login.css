@@ -25,6 +25,7 @@ input::-webkit-input-placeholder {
 
     .Login_div.credentials input {
         width: 90%;
+        margin-left: 5%;
     }
 
     .footer_ul {
