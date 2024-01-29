@@ -15,7 +15,8 @@ export const Navbar = ({ username }) => {
 
     useEffect(() => {
         // Update hideNavbar based on the current location
-        if (location.pathname === '/login' || location.pathname === '/signup' || location.pathname === '/') {
+        // if (location.pathname === '/login' || location.pathname === '/signup' || location.pathname === '/') {
+            if (location.pathname === '/login' || location.pathname === '/signup' ) {
             setHideNavbar(true);
         } else {
             setHideNavbar(false);

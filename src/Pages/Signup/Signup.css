@@ -66,6 +66,7 @@ input::-webkit-input-placeholder {
 
     .Signup_div input {
         width: 90%;
+        margin-left: 5%;
     }
 
     .footer_ul {
