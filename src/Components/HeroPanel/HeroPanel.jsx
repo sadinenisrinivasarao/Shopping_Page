@@ -9,15 +9,15 @@ export const HeroPanel = () =>{
         <>
         <div className="HeroPanel">
             <div className="HeroPanel_left">
-                <h2>New Arrivals</h2>
+                <h2>Srinivas Sadineni</h2>
 
                     <div className="Hero_head">
 <p>New <img src={hand_icon}/> for everyone</p>
                     
                 </div>
                 <div className="Hero_latest">
-                <button className='new_collections'><Link to={'/login'}>Latest Collections <img src={arrow_icon} alt="" /></Link></button>
-                    
+                {/* <button className='new_collections'><Link to={'/login'}>Latest Collections <img src={arrow_icon} alt="" /></Link></button> */}
+                <button className='new_collections'>Latest Collections <img src={arrow_icon} alt="" /></button>
 
                 </div>
             </div>

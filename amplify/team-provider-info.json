@@ -1,0 +1,20 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-shoppingpage-dev-124851-authRole",
+      "UnauthRoleArn": "arn:aws:iam::816352276926:role/amplify-shoppingpage-dev-124851-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::816352276926:role/amplify-shoppingpage-dev-124851-authRole",
+      "Region": "us-west-2",
+      "DeploymentBucketName": "amplify-shoppingpage-dev-124851-deployment",
+      "UnauthRoleName": "amplify-shoppingpage-dev-124851-unauthRole",
+      "StackName": "amplify-shoppingpage-dev-124851",
+      "StackId": "arn:aws:cloudformation:us-west-2:816352276926:stack/amplify-shoppingpage-dev-124851/330d0340-c90e-11ee-bef8-02126dfb1a95",
+      "AmplifyAppId": "d1fogqztf0jyz8"
+    },
+    "categories": {
+      "auth": {
+        "shoppingpage68e3b2e1": {}
+      }
+    }
+  }
+}

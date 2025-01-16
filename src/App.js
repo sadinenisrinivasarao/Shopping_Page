@@ -28,6 +28,7 @@ function App() {
         <Navbar username={username} />
         <Routes>
           <Route path='/' element={<Shop />}></Route>
+          <Route path='/shop' element={<Shop />}></Route>
           <Route path='/men' element={<ShopCategory banner={men_banner} category="men" />}></Route>
           <Route path='/women' element={<ShopCategory banner={women_banner} category="women" />}></Route>
           <Route path='/kids' element={<ShopCategory banner={kids_banner} category="kid" />}></Route>
